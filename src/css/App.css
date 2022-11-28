@@ -39,5 +39,84 @@ a {
 }
 
 li {
-    list-style: none;
+    list-style:none;
 }
+
+.modal, .shadow-container{
+   transition: all 500ms ease-in-out;
+}
+
+.div-img-container{
+    transition: all 500ms ease-in;
+
+}
+
+.pencil {
+    transform: translateX(40px) rotate(30deg);
+    animation: infinite ease-in-out 2300ms pencil;
+}
+
+.eraser{
+    border: 1px solid white;
+    height: 20px;
+    width: 20px;
+    border-radius:3px 3px 0px 0px;
+}
+
+.body-pencil{
+    border: 1px solid white;
+    height: 80px;
+    width: 20px;
+}
+
+.tip{
+    border: 1px solid white;
+    height: 20px;
+    width: 20px;
+ clip-path: polygon(50% 0, 100% 0%, 50% 100%, 0 0%);
+ background-color: white;
+}
+
+@keyframes pencil {
+
+    0% {
+transform: translateX(0)  rotate(0deg)  ;
+    } 
+
+    25%{
+transform: translateX(40px) rotate(30deg) 
+    }
+
+    50%{
+transform: translateX(70px)  rotate(10deg)
+    }
+
+    75% {
+        transform: translateX(-40px) rotate(30deg)
+    }
+
+    100%{
+transform: translateX(0px)  rotate(0deg)
+    }
+}
+
+@keyframes transitionOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    33% {
+        opacity: 1;
+    }
+
+    66% {
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+
