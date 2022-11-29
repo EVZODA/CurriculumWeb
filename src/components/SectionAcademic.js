@@ -48,6 +48,12 @@ useEffect(() => {
       "Beca del Banco de La Pampa.",
       "Beca del Rotary.",
       "Pasantía - IPAV -.",
+    ],
+    infoAcademyNumen:[
+      "Academia Numen",
+      "Full Stack Developer",
+      "2022 - 2022 ",
+
     ]
   }
 
@@ -90,8 +96,8 @@ return <p className={`infoacademySecondary transition-[opacity] duration-[2500ms
 })} </div>
         <div className={'sm:w-[40%] sm:h-[320px] w-[70%] h-[300px] bg-[#8d4925] text-white rounded-[8px] flex flex-col justify-center items-center z-[1]'}>
         <Pencil number={3} setAnimationCarrousel={setAnimationCarrousel} animationCarrousel={animationCarrousel}></Pencil>
-        {informacionacademica.infoUniversity.map((element, index) => {
-  return <p className={`infoacademyUniversity transition-[opacity] duration-[2500ms] opacity-0 ${animationCarrousel===3? "animate-[transitionOpacity_7000ms_ease-in-out_infinite]":""}`} key={index}>{element}</p>
+        {informacionacademica.infoAcademyNumen.map((element, index) => {
+  return <p className={`infoAcademyNumen transition-[opacity] duration-[2500ms] opacity-0 ${animationCarrousel===3? "animate-[transitionOpacity_7000ms_ease-in-out_infinite]":""}`} key={index}>{element}</p>
 })}
         </div>
       </div>

@@ -1,17 +1,18 @@
 import React from "react";
 import reacticon from "../img/icons8-react.svg";
 import Burguer from "./Burguer";
+import {BiHomeAlt} from "react-icons/bi"
 
 
 
+const goHome = () =>{
+  window.scrollTo ({  top: 0,
+   behavior: 'smooth'})
+ }
 
 
 
 const Navbar = () => {
-
-
-  
-
 
   let drop = true;
   const dropdown = () => {
@@ -60,7 +61,7 @@ const Navbar = () => {
   return (
     <div className="navbar flex justify-between py-[30px] px-[20px] bg-[#8d4925] items-center fixed w-[100%] z-[50]">
       <div className="navbar-logo flex items-start">
-        <img src={reacticon} className="logo w-[40px] " />
+        <button onClick={goHome}><BiHomeAlt className="text-[60px] text-white"/></button>
       </div>
 
       <div className="navbar-items flex flex-col md:flex md:flex-row items-center text-black md:space-x-10 space-y-2 text-xl w-[100%] md:w-[auto] text-white ">
@@ -70,11 +71,11 @@ const Navbar = () => {
         <button className="hover:text-[#8d4925] hover:bg-[#f0ecec] p-[8px] rounded-[6px] text-white">Formacion Academica</button>
         <button className="hover:text-[#8d4925] hover:bg-[#f0ecec] p-[8px] rounded-[6px] text-white">Datos de Contacto</button>
         <button onClick={dropdown} className="dropdown relative hover:bg-[#f0ecec] flex justify-center hover:text-[#8d4925] p-[8px] rounded-[6px] text-white">
-          hola
+          Proximamente
           <div className="dropdown-items absolute flex flex-col bg-[#f0ecec] text-[#8d4925] px-[30px] md:right-0 w-[194px] mt-[28px] opacity-0 pointer-events-none top-[25px] rounded-[6px] shadow-lg border-t-[1px] border-black ">
-            <button className="py-[10px]  p-[8px] rounded-[6px]">hola</button>
-            <button className="py-[10px]  p-[8px] rounded-[6px]">hola</button>
-            <button className="py-[10px]  p-[8px] rounded-[6px]">hola</button>
+            <button className="py-[10px]  p-[8px] rounded-[6px]">nuevas paginas</button>
+            <button className="py-[10px]  p-[8px] rounded-[6px]">nuevas paginas</button>
+            <button className="py-[10px]  p-[8px] rounded-[6px]">nuevas paginas</button>
           </div>
         </button>
       </div>

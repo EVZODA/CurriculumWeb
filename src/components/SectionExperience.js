@@ -3,7 +3,7 @@ import React from 'react'
 const SectionExperience = () => {
   return (
     <>
-    <h1 className='bg-[#b96e48] text-center text-white text-[24px] py-[40px]'>Experencia Laboral</h1>
+    <h1 className='bg-[#b96e48] text-center text-white text-[24px] py-[40px]'>Experiencia Laboral</h1>
     <div className='grid grid-cols-1 justify-items-center py-[20px] bg-[#b96e48] lg:grid-cols-2'>    
 <div className='h-[300px] w-[300px] sm:h-[190px] sm:w-[400px] bg-[#eee] my-[20px] rounded-[6px] flex flex-col justify-center text-[20px]'>
   <p className='text-center'>Tecnico Particular a Domicilio</p>
