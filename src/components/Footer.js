@@ -10,7 +10,7 @@ const goHome = () =>{
 
 const Footer = () => {
   return (
-   <div className='footer-container h-[400px] md:h-[300px] grid grid-cols-1 justify-items-center items-center bg-[#8d4925] md:grid-cols-2 md:items-center'>
+   <div id='footer' className='footer-container h-[400px] md:h-[300px] grid grid-cols-1 justify-items-center items-center bg-[#8d4925] md:grid-cols-2 md:items-center'>
     <button onClick={goHome} className='footer-logo '><BiHomeAlt className='text-[80px] text-white'/></button>
     <div className='footer-links grid grid-cols-2 md:grid-cols-4'>
       <a href='https://www.instagram.com/enzogiacoia/' target="blank" className='py-[30px] md:py-[0px]'><BsInstagram className='text-[80px] text-white'/></a>

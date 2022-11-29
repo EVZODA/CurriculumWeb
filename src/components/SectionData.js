@@ -10,7 +10,7 @@ const SectionData = () => {
   const [showinfo, setShowInfo] = useState(false)
   return (<>
   <Modal setShow={setShow} showinfo={showinfo} show={show}></Modal>
-    <div className='items-center flex flex-col justify-around h-[700px] md:flex md:flex-row md:justify-around bg-[#b96e48]'>
+    <div id='sectionData' className='items-center flex flex-col justify-around h-[700px] md:flex md:flex-row md:justify-around bg-[#b96e48]'>
       <div className='rounded-[8px] h-[300px] w-[300px] flex flex-col justify-between py-[20px] bg-[white] text-[#8d4925] '>
         <img src={person} className='h-[200px]'/>
       <button className='' onClick={()=>{setShow(true); setShowInfo(false)}}>Perfil personal</button>

@@ -72,7 +72,7 @@ useEffect(() => {
   
 
   return (
-    <div className='h-[100vh] text-center flex justify-center items-center bg-[#eee]'>
+    <div id='sectionAcademic' className='h-[100vh] text-center flex justify-center items-center bg-[#eee]'>
     <div className='carrousel relative w-[100%] h-[700px] flex items-center overflow-hidden'>
       <div className={`div-img-container w-[100%] justify-around absolute sm:space-x-10 space-y-10 sm:space-y-0 flex sm:flex-row items-center flex-col ${carrousel===0?"opacity-1 right-0":"-right-[150px] opacity-0"}`}>
         <div className='sm:w-[40%] sm:h-[320px] w-[70%] h-[300px] bg-[#8d4925] text-white rounded-[8px] flex flex-col justify-center items-center z-[1]'> 

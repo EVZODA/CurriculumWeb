@@ -2,6 +2,7 @@ import React from "react";
 import reacticon from "../img/icons8-react.svg";
 import Burguer from "./Burguer";
 import {BiHomeAlt} from "react-icons/bi"
+import {Link, NavLink} from "react-router-dom"
 
 
 
@@ -66,18 +67,18 @@ const Navbar = () => {
 
       <div className="navbar-items flex flex-col md:flex md:flex-row items-center text-black md:space-x-10 space-y-2 text-xl w-[100%] md:w-[auto] text-white ">
       <Burguer navbarBurguer={navbarBurguer}></Burguer>
-        <button className="hover:text-[#8d4925] hover:bg-[#f0ecec] p-[8px] rounded-[6px] text-white">Perfil personal/habilidades</button>
-        <button className="hover:text-[#8d4925] hover:bg-[#f0ecec] p-[8px] rounded-[6px] text-white">Experiencia laboral</button>
-        <button className="hover:text-[#8d4925] hover:bg-[#f0ecec] p-[8px] rounded-[6px] text-white">Formacion Academica</button>
-        <button className="hover:text-[#8d4925] hover:bg-[#f0ecec] p-[8px] rounded-[6px] text-white">Datos de Contacto</button>
-        <button onClick={dropdown} className="dropdown relative hover:bg-[#f0ecec] flex justify-center hover:text-[#8d4925] p-[8px] rounded-[6px] text-white">
+        <a href="#sectionData" className="hover:text-[#8d4925] hover:bg-[#f0ecec] p-[8px] rounded-[6px] text-white">Perfil personal/habilidades</a>
+        <a href="#sectionExperience" className="hover:text-[#8d4925] hover:bg-[#f0ecec] p-[8px] rounded-[6px] text-white">Experiencia laboral</a>
+        <a href="#sectionAcademic" className="hover:text-[#8d4925] hover:bg-[#f0ecec] p-[8px] rounded-[6px] text-white">Formacion Academica</a>
+        <a href="#footer" className="hover:text-[#8d4925] hover:bg-[#f0ecec] p-[8px] rounded-[6px] text-white">Datos de Contacto</a>
+        <a onClick={dropdown} className="dropdown relative hover:bg-[#f0ecec] flex justify-center hover:text-[#8d4925] p-[8px] rounded-[6px] text-white">
           Proximamente
           <div className="dropdown-items absolute flex flex-col bg-[#f0ecec] text-[#8d4925] px-[30px] md:right-0 w-[194px] mt-[28px] opacity-0 pointer-events-none top-[25px] rounded-[6px] shadow-lg border-t-[1px] border-black ">
-            <button className="py-[10px]  p-[8px] rounded-[6px]">nuevas paginas</button>
-            <button className="py-[10px]  p-[8px] rounded-[6px]">nuevas paginas</button>
-            <button className="py-[10px]  p-[8px] rounded-[6px]">nuevas paginas</button>
+            <a className="py-[10px]  p-[8px] rounded-[6px]">nuevas paginas</a>
+            <a className="py-[10px]  p-[8px] rounded-[6px]">nuevas paginas</a>
+            <a className="py-[10px]  p-[8px] rounded-[6px]">nuevas paginas</a>
           </div>
-        </button>
+        </a>
       </div>
     </div>
   );

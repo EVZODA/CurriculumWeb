@@ -6,6 +6,7 @@ import SectionData from './components/SectionData';
 import SectionAcademic from './components/SectionAcademic';
 import Footer from './components/Footer';
 import SectionExperience from './components/SectionExperience';
+
 // Run: npx tailwindcss -i ./src/css/App.css -o ./src/css/tailwind.css --watch acordarse de ponerlo
 // import {  } from 'flowbite-react'
 // import {  } from '@heroicons/react/24/outline'
