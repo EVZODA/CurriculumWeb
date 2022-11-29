@@ -14,7 +14,7 @@ const Burguer = (props) => {
 
     const widht = () => {
         const burger = document.getElementsByClassName("burger")   
-        if (window.innerWidth>768){
+        if (window.innerWidth>1023){
         burger[0].style.display= "none"
         }
     }

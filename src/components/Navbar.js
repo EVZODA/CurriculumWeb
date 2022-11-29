@@ -44,7 +44,7 @@ const Navbar = () => {
 
 
   const navbarBurguer = () => {
-    if (window.innerWidth < 768){
+    if (window.innerWidth < 1023){
       if ( burguerdesplegable === false ){
         $navbaritems[0].style.height = navheight - navheight + "54px"
         $navbaritems[0].style.overflow = "hidden"
