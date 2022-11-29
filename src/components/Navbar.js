@@ -65,7 +65,7 @@ const Navbar = () => {
         <button onClick={goHome}><BiHomeAlt className="text-[60px] text-white"/></button>
       </div>
 
-      <div className="navbar-items flex flex-col md:flex md:flex-row items-center text-black md:space-x-10 space-y-2 text-xl w-[100%] md:w-[auto] text-white ">
+      <div className="navbar-items flex flex-col lg:flex lg:flex-row items-center text-black lg:space-x-10 space-y-2 text-xl w-[100%] lg:w-[auto] text-white ">
       <Burguer navbarBurguer={navbarBurguer}></Burguer>
         <a href="#sectionData" className="hover:text-[#8d4925] hover:bg-[#f0ecec] p-[8px] rounded-[6px] text-white">Perfil personal/habilidades</a>
         <a href="#sectionExperience" className="hover:text-[#8d4925] hover:bg-[#f0ecec] p-[8px] rounded-[6px] text-white">Experiencia laboral</a>
@@ -73,7 +73,7 @@ const Navbar = () => {
         <a href="#footer" className="hover:text-[#8d4925] hover:bg-[#f0ecec] p-[8px] rounded-[6px] text-white">Datos de Contacto</a>
         <a onClick={dropdown} className="dropdown relative hover:bg-[#f0ecec] flex justify-center hover:text-[#8d4925] p-[8px] rounded-[6px] text-white">
           Proximamente
-          <div className="dropdown-items absolute flex flex-col bg-[#f0ecec] text-[#8d4925] px-[30px] md:right-0 w-[194px] mt-[28px] opacity-0 pointer-events-none top-[25px] rounded-[6px] shadow-lg border-t-[1px] border-black ">
+          <div className="dropdown-items absolute flex flex-col bg-[#f0ecec] text-[#8d4925] px-[30px] lg:right-0 w-[194px] mt-[28px] opacity-0 pointer-events-none top-[25px] rounded-[6px] shadow-lg border-t-[1px] border-black ">
             <a className="py-[10px]  p-[8px] rounded-[6px]">nuevas paginas</a>
             <a className="py-[10px]  p-[8px] rounded-[6px]">nuevas paginas</a>
             <a className="py-[10px]  p-[8px] rounded-[6px]">nuevas paginas</a>
